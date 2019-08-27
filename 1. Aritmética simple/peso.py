@@ -9,4 +9,4 @@
 masa = float(input('Masa del objeto en kilogramos: '))
 GRAVEDAD = 9.8
 peso = masa * GRAVEDAD
-print('El peso de un objeto de', masa, 'kg es:', peso, 'Newtons')
+print('El peso de un objeto de', masa, 'kg es:', round(peso, 2), 'Newtons')
