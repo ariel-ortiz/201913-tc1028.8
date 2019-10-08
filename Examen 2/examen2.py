@@ -1,8 +1,9 @@
 # ----------------------------------------------------------
 #
-# Escribe aquí tu matrícula y nombre.
+# Solución de examen 2, sección práctica.
 #
 # ----------------------------------------------------------
+
 
 def paridad(bits):
     """Devuelve bits concatenado con su correspondiente bit de paridad.
@@ -23,7 +24,11 @@ def paridad(bits):
     True
     """
     # Escribe a continuación tu solución:
-    pass
+    numero_de_unos = bits.count('1')
+    if numero_de_unos % 2 == 0:
+        return bits + '0'
+    else:
+        return bits + '1'
 
 
 def babilonico(n):
@@ -41,7 +46,14 @@ def babilonico(n):
     True
     """
     # Escribe a continuación tu solución:
-    pass
+    anterior = 0
+    ratio = 0
+    x = n
+    while x != anterior:
+        anterior = x
+        ratio = n / x
+        x = (ratio + x) / 2
+    return x
 
 
 if __name__ == '__main__':
